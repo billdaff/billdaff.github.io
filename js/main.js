@@ -272,7 +272,7 @@
         //Google Maps
         $("#map").googleMap();
         $("#map").addMarker({
-            address: "Brick NJ, 08723" // Your Address
+            address: "Brick, NJ" // Your Address
         });
     });
 
