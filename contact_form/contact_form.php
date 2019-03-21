@@ -1,7 +1,7 @@
 <?php
 
 // configure
-$from = 'Contact form <yourmail@domain.com>';
+$from = 'Contact form billdafeldecker@gmail.com';
 $sendTo = 'your@mail.com';
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
@@ -12,7 +12,7 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
 
 if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
     //your site secret key
-    $secret = '6LdqmCAUAAAAANONcPUkgVpTSGGqm60cabVMVaON';
+    $secret = '6Lc0KZkUAAAAAHJo_x-sVDoDBYCPNRXZ_yosoaWe';
     //get verify response data
 
     $c = curl_init('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
